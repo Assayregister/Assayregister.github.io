@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background: #041738;
+    color: #fff;
+}
+
+header, main {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    
+}
+
+h1 {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 8px 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+section.img-container {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-frame {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    aspect-ratio: 350/570;
+    border: none;
+    overflow: hidden;
+    pointer-events: none; /* Hace el PDF estático */
+    border-radius: 25px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    object-fit: contain;
+}
+
+.download-box {
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 0 18px 0;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.download-btn:hover {
+    background: #041738;
+}
+
+.img-container {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+.logo-container {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsividad para móviles y tabletas */
+@media (max-width: 600px) {
+    header, main {
+        width: 98%;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 0.9em;
+    }
+    section.pdf-container {
+        max-width: 98vw;
+    }
+    .pdf-frame {
+        max-width: 98vw;
+        aspect-ratio: 350/570;
+    }
+    .download-box {
+        max-width: 98vw;
+    }
+    .img-container {
+        max-width: 80px;
+    }
+}

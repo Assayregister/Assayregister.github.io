@@ -110,6 +110,11 @@ section.img-container {
     justify-content: center;
 }
 
+.logo-img {
+    max-width: 100%;
+    margin-top: 2px;
+}
+
 /* Responsividad para móviles y tabletas */
 @media (max-width: 600px) {
     header, main {
